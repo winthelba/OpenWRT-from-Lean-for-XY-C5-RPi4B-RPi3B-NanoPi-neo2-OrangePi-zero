@@ -21,12 +21,12 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages
 sed -i '$a src-git small https://github.com/kenzok8/small
 
 # Add apps to profile-lean
-#pushd package/lean
-git clone https://github.com/rufengsuixing/luci-app-onliner package/lean
-git clone https://github.com/kang-mk/luci-app-smartinfo package/lean
-git clone https://github.com/tty228/luci-app-serverchan package/lean
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean
-git clone https://github.com/destan19/OpenAppFilter.git package/lean
-git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk package/lean
-git clone https://github.com/BoringCat/luci-app-mentohust.git package/lean
+pushd package/lean
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
+git clone --depth=1 https://github.com/kang-mk/luci-app-smartinfo
+git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
+git clone --depth=1 https://github.com/destan19/OpenAppFilter.git
+git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
+git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust.git
