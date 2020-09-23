@@ -19,7 +19,7 @@
 # Add a feed source by kenzok8/openwrt-packages
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git src-git extra https://github.com/Andy2244/openwrt-extra.git
+# sed -i '$a src-git src-git extra https://github.com/Andy2244/openwrt-extra.git
 
 # Add apps to profile-lean
 pushd package/lean
